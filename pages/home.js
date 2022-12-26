@@ -23,8 +23,8 @@ const HomePage = () => {
   const [submitButton, setSubmitButton] = useState(true);
   const [cancelButton, setCancelButton] = useState(true);
   const processLetters = () => {
-    let name1 = firstName;
-    let name2 = secondName;
+    let name1 = firstName.toLowerCase();
+    let name2 = secondName.toLowerCase();
 
     // for (let i = 0; i < name1.length; i++) {
     //   var flag = name2.includes(name1[i]);
@@ -262,6 +262,7 @@ const HomePage = () => {
             paddingTop: ScreenHeight * 0.3,
             paddingBottom: ScreenHeight * 0.4,
             justifyContent: 'center',
+            resizeMode: 'cover',
           }}>
           <Text
             style={{
